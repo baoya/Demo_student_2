@@ -65,7 +65,7 @@ public class denglu extends Activity {
         	user_pass.setText(password);
         	remember_pass.setChecked(true);
         }
-        
+        //登录按钮单击事件
         entry.setOnClickListener(new OnClickListener() {
         	//返回用户名
         	public String loadname(){
@@ -132,8 +132,6 @@ public class denglu extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				
-				//Toast.makeText(denglu.this, loadname(), Toast.LENGTH_SHORT).show();
-				//Toast.makeText(denglu.this, loadpass(), Toast.LENGTH_SHORT).show();
 				
 				String account = user_name.getText().toString();
 				String password = user_pass.getText().toString();

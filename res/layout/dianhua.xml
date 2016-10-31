@@ -7,8 +7,10 @@
         android:layout_height="wrap_content"
         android:text="---学 生 电 话---"
         android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="#cc9966"/>
+        android:textSize="20sp"
+        android:textColor="#cc9966"
+        android:background="@drawable/ll_1"
+        android:layout_margin="10dp"/>
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

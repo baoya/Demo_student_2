@@ -9,6 +9,14 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical">
+	    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---学 生 信 息---"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#cc9966"
+        android:background="@drawable/ll_1"
+        android:layout_margin="10dp"/>
 	    <ListView 
 	        android:id="@+id/list"
 	        android:layout_width="match_parent"

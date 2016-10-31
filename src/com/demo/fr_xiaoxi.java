@@ -123,6 +123,7 @@ public class fr_xiaoxi extends Fragment{
 			@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
 					final int position, long id) {
+				
 				new AlertDialog.Builder(getActivity()).setTitle("提醒").setMessage("您确定要删除该项吗?")
 				.setNegativeButton("取消", null).setPositiveButton("确定", new DialogInterface.OnClickListener() {		
 					@Override
