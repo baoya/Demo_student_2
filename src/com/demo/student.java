@@ -1,5 +1,7 @@
 package com.demo;
 
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -14,16 +16,24 @@ public class student extends Activity /*implements OnClickListener*/{
 	
 	private FragmentManager manager;
 	private FragmentTransaction transaction;
+	private SlidingMenu slidingMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         
+        slidingMenu = new SlidingMenu(this);
+        slidingMenu.setMode(SlidingMenu.LEFT);
+        slidingMenu.setBehindOffsetRes(R.dimen.sliding_menu_offset);
+        slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        slidingMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        slidingMenu.setMenu(R.layout.slidingmenu);
+        
         manager = getFragmentManager(); 
         	
         rg = (RadioGroup) findViewById(R.id.rg);
-        
+        //加载信息界面
         transaction = manager.beginTransaction();
         fr_xiaoxi xiaoxi = new fr_xiaoxi();
 		transaction.replace(R.id.fragment_down, xiaoxi, "xiaoxi");

@@ -60,7 +60,7 @@ public class fr_xiaoxi extends Fragment{
 			@Override
 			public void onClick(View arg0) {
 				
-				Toast.makeText(getActivity(), "感谢您安装此APP!", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getActivity(), "单击修改,长按删除", Toast.LENGTH_SHORT).show();
 			}
 		});
 		
