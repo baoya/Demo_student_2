@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+         android:paddingLeft="30dp"
+	    android:paddingRight="30dp">
+        
+       <EditText 
+           android:id="@+id/user_name"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:textColor="#66CC66"
+           android:background="@drawable/edtext"
+           android:hint="请输入用户名"/>  
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+         android:paddingLeft="30dp"
+	    android:paddingRight="30dp"
+	    android:layout_marginTop="10dp">
+		
+       <EditText 
+           
+           android:id="@+id/user_pass"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:textColor="#66CC66"
+           android:password="true"
+           android:background="@drawable/edtext"
+           android:hint="请输入密码"/>  
+    </TableRow>
+
+	
+	 <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="30dp"
+	    android:paddingRight="30dp" >
+	     <Button 
+           android:id="@+id/entry"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:textColor="#99ff99"
+           android:background="@drawable/button_1"
+           android:textSize="30sp"
+           android:text="登			录"/>
+	 </LinearLayout> 
+       
+	 
+	 <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:gravity="right" >
+
+		<CheckBox
+		    android:id="@+id/remember_pass"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+
+		 <TextView
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="记住账户密码"
+	        android:textColor="#D9D9D9"/>
+	 </LinearLayout>
+	 <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right" >
+	      <TextView
+           android:id="@+id/tvregister"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#D9D9D9"
+           android:text="没有账号？注册"
+           android:paddingRight="10dp"
+           android:textSize="15sp"/>
+	 </LinearLayout> 
+
+</TableLayout>
+</TableLayout>
+
