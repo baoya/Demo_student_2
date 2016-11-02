@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#ffffff" >
     <TextView android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="---信 息 增 加---"
@@ -10,129 +11,150 @@
         android:textSize="30sp"
         android:textColor="#cc9966"/>
     <LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:paddingTop="5dp">
-	    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="学号:"
 	        android:textColor="#cc9966" />
 	    <EditText 
 	        android:id="@+id/etstuid"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>
-	    <TextView 
+	        android:background="@drawable/edtext_1"
+	       />
+    </LinearLayout>
+	 <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+	     <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="姓名:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etname"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>    
-	</LinearLayout>
-    <LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:paddingTop="5dp">
-	    <TextView 
+	        android:background="@drawable/edtext_1"
+	        /> 
+	 </LinearLayout>   
+	       
+ <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+      <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="系别:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etdepar"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
 	        android:background="@drawable/edtext_1"/>
-	    <TextView 	
+ </LinearLayout> 
+	   
+	 <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+	      <TextView 	
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="班级:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etclass"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>    
-	</LinearLayout>
-    <LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:paddingTop="5dp">
-	    <TextView 
+	        android:background="@drawable/edtext_1"/>
+	 </LinearLayout>    
+	       
+<LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+    <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="性别:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etsex"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/edtext_1"/>
+</LinearLayout> 
+	    
+	    <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+	         <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
+	        android:text="手机:"
+	        android:textColor="#cc9966"/>
+	    <EditText 
+	        android:id="@+id/etphone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
 	        android:background="@drawable/edtext_1"/>
-	    <TextView 
+	    </LinearLayout> 
+	       
+<LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+    <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="年龄:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etage"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>    
-	</LinearLayout>
-    <LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:paddingTop="5dp">
-	    <TextView 
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="手机号:"
-	        android:textColor="#cc9966"/>
-	    <EditText 
-	        android:id="@+id/etphone"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>
-	    <TextView 
+	        android:background="@drawable/edtext_1"/> 
+</LinearLayout> 
+	   
+	    <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp"><TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="QQ号:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etqq"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>    
-	</LinearLayout>
-    <LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:paddingTop="5dp">    
-	    <TextView 
+	        android:background="@drawable/edtext_1"/>
+	    </LinearLayout> 
+	        
+   <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      android:layout_marginBottom="5dp">
+       <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="家庭地址:"
 	        android:textColor="#cc9966"/>
 	    <EditText 
 	        android:id="@+id/etadress"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@drawable/edtext_1"/>    
-	</LinearLayout>
+	        android:background="@drawable/edtext_1"/>  
+   </LinearLayout> 
+	      
+
 	<LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"

@@ -36,6 +36,9 @@
         <activity android:name="com.demo.updata_stu"
             android:label="@style/AppTheme">
         </activity>
+        <activity android:name="com.demo.add_remarks"
+            android:label="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>
